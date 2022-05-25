@@ -14,6 +14,7 @@ app.get("/", (req, res) => {
         newDate = `La hora actual es: ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
         console.log(newDate)
     }
+    res.send("Hello :)")
 })
 
 app.listen(port, HOST)
