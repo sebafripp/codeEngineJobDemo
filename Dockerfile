@@ -1,13 +1,7 @@
 FROM node:18
 
-WORKDIR /usr/src/app
-
-COPY package*.json ./
-
-RUN npm install
+WORKDIR /usr/scr/app
 
 COPY . .
 
-EXPOSE 8080
-
-CMD [ "node", "app.js" ]
+CMD [ "node", "app.js" ] 
